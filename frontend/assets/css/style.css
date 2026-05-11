@@ -1,0 +1,214 @@
+/* =========================
+   GLOBAL
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0b1220;
+  color: #e5e7eb;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* =========================
+   SIDEBAR (PRO UI)
+========================= */
+.sidebar {
+  width: 260px;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+  border-right: 1px solid #1f2937;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #38bdf8;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  color: #94a3b8;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.sidebar a:hover {
+  background: #1e293b;
+  color: #fff;
+  transform: translateX(5px);
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+.main {
+  margin-left: 260px;
+  padding: 30px;
+  width: 100%;
+}
+
+/* =========================
+   GRID (DASHBOARD CARDS)
+========================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* =========================
+   CARDS
+========================= */
+.card {
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid #1f2937;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #38bdf8;
+}
+
+.card h2 {
+  font-size: 28px;
+  color: #38bdf8;
+}
+
+/* =========================
+   TABLES
+========================= */
+.table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background: #0f172a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table th {
+  background: #1e293b;
+  padding: 12px;
+  text-align: left;
+  color: #38bdf8;
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #1f2937;
+  color: #e5e7eb;
+}
+
+.table tr:hover {
+  background: #1e293b;
+}
+
+/* =========================
+   INPUTS (SEARCH)
+========================= */
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #1f2937;
+  background: #0f172a;
+  color: white;
+  outline: none;
+}
+
+.input:focus {
+  border-color: #38bdf8;
+}
+
+/* =========================
+   BUTTONS (PAGINATION)
+========================= */
+button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #0ea5e9;
+  transform: scale(1.05);
+}
+
+/* =========================
+   LOADING
+========================= */
+#loading {
+  margin-top: 20px;
+  color: #94a3b8;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.sidebar a i {
+  font-size: 18px;
+}
+
+.sidebar a:hover {
+  background: #1e293b;
+  color: white;
+  transform: translateX(5px);
+}

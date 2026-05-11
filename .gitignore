@@ -1,0 +1,32 @@
+
+---
+
+# 🟢 🚫 `.gitignore`
+
+```gitignore id="gitignore_final"
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+env/
+peerreview/
+
+# FastAPI / Streamlit cache
+.streamlit/
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (React)
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
